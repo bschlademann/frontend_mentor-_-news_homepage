@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <main>
-      <div className="page-header">
+    <main className="flex-column gap-2-rem">
+      <div className="page-header gap-2-rem">
         <img className="logo" src="/src/assets/images/logo.svg" alt="" />
         {/* <nav>
           <a href="">Home</a>
@@ -14,14 +14,14 @@ function App() {
         </nav> */}
       </div>
 
-      <div className="headline-article">
+      <div className="headline-article gap-2-rem">
         <img
           className="hero-image"
           src="/src/assets/images/image-web-3-mobile.jpg"
           alt=""
         />
         <h1>The Bright Future of Web 3.0?</h1>
-        <div>
+        <div className="gap-2-rem">
           <p>
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
@@ -30,7 +30,7 @@ function App() {
           <div className="button">READ MORE</div>
         </div>
 
-        <div className="new-articles">
+        <div className="new-articles gap-2-rem">
           <h2>New</h2>
           <section>
             <div>
@@ -57,28 +57,34 @@ function App() {
         </div>
       </div>
 
-      <div className="footer">
-        <div>
+      <ol className="ranked-articles gap-2-rem">
+        <li>
           <img src="/src/assets/images/image-retro-pcs.jpg" alt="" />
-          <div>01</div>
-          <h3>Reviving Retro PCs</h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
+          <div>
+            <div>01</div>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </li>
 
-        <div>
+        <li>
           <img src="/src/assets/images/image-top-laptops.jpg" alt="" />
-          <div>02</div>
-          <h3> Top 10 Laptops of 2022</h3>
-          <p> Our best picks for various needs and budgets.</p>
-        </div>
+          <div>
+            <div>02</div>
+            <h3> Top 10 Laptops of 2022</h3>
+            <p> Our best picks for various needs and budgets.</p>
+          </div>
+        </li>
 
-        <div>
+        <li>
           <img src="/src/assets/images/image-gaming-growth.jpg" alt="" />
-          <div>03</div>
-          <h3>The Growth of Gaming</h3>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-      </div>
+          <div>
+            <div>03</div>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </li>
+      </ol>
     </main>
   );
 }
