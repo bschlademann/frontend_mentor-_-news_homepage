@@ -3,15 +3,36 @@ import "./App.css";
 function App() {
   return (
     <main className="flex-column gap-2-rem">
+      <div className="page-overlay"></div>
       <div className="page-header gap-2-rem">
         <img className="logo" src="/src/assets/images/logo.svg" alt="" />
-        {/* <nav>
-          <a href="">Home</a>
-          <a href="">New</a>
-          <a href="">Popular</a>
-          <a href="">Trending</a>
-          <a href="">Categories</a>
-        </nav> */}
+        <nav>
+          <input type="checkbox" className="toggler" />
+          <div className="hamburger">
+            <div></div>
+          </div>
+          <div className="menu">
+            <div>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">New</a>
+                </li>
+                <li>
+                  <a href="#">Popular</a>
+                </li>
+                <li>
+                  <a href="#">Trending</a>
+                </li>
+                <li>
+                  <a href="#">Categories</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
 
       <div className="headline-article gap-2-rem">
