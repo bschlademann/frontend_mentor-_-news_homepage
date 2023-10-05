@@ -1,13 +1,27 @@
 import "./App.css";
 
 function App() {
+
+  const toggleOverlay = () => {
+    const toggler = document.querySelector('.toggler');
+    const overlay = document.getElementById('overlay');
+  
+    if (toggler instanceof HTMLInputElement && overlay) {
+      toggler.addEventListener('change', () => {
+        overlay.style.opacity = toggler.checked ? '0.4' : '0';
+      });
+    } else {
+      console.error('Toggler or overlay element not found.');
+    }
+  }
+
   return (
     <main className="flex-column gap-2-rem">
-      <div className="page-overlay"></div>
+      <div className="page-overlay" id="overlay"></div>
       <div className="page-header gap-2-rem">
         <img className="logo" src="/src/assets/images/logo.svg" alt="" />
         <nav>
-          <input type="checkbox" className="toggler" />
+          <input type="checkbox" className="toggler" onChange={toggleOverlay}/>
           <div className="hamburger">
             <div></div>
           </div>
