@@ -222,6 +222,8 @@ main {
 .new-articles {
   background-color: var(--very-dark-blue);
   padding: 30px 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   /* padding values for desktop */
   /* padding: 40px 25px; */
@@ -274,16 +276,24 @@ h3 {
 
 .ranked-articles li h3 {
   color: var(--very-dark-blue);
+  font-size: 1.1rem;
 }
 
 .ranked-articles li > div {
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .ranked-articles li > div div {
   color: var(--grayish-blue);
   font-size: 2rem;
   font-weight: 700;
+}
+
+.ranked-articles li > div p {
+  /* outline: 2px solid red; */
+  color: var(--dark-grayish-blue);
+  /* line-height: 1.3rem; */  
 }
 
 /* BURGER MENU menu */
@@ -411,14 +421,12 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 .menu > div > ul > li {
   list-style: none;
   padding: 0.5rem;
-  
 }
 
 .menu > div > ul > li > a {
   color: var(--very-dark-blue);
   text-decoration: none;
   font-size: 1.1rem;
- 
 }
 
 /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
