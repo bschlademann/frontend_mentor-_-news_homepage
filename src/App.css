@@ -277,6 +277,7 @@ h3 {
 .ranked-articles li h3 {
   color: var(--very-dark-blue);
   font-size: 1.1rem;
+align-content: center;
 }
 
 .ranked-articles li > div {
@@ -291,9 +292,9 @@ h3 {
 }
 
 .ranked-articles li > div p {
-  /* outline: 2px solid red; */
+
   color: var(--dark-grayish-blue);
-  /* line-height: 1.3rem; */  
+  line-height: 1.6rem;  
 }
 
 /* BURGER MENU menu */
