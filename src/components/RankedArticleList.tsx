@@ -4,8 +4,8 @@ import { RankedArticle } from "./RankedArticle";
 export const RankedArticleList = () => {
   return (
     <ol className="ranked-articles gap-2-rem">
-      {rankedArticles.map((rankedArticle, index) => {
-        const { imageSrc, imageAlt, rank, headline, text } = rankedArticle;
+      {rankedArticles.map((article, index) => {
+        const { imageSrc, imageAlt, rank, headline, text } = article;
         return (
           <RankedArticle
             index={index}
