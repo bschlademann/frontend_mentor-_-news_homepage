@@ -1,4 +1,5 @@
 import "./App.css";
+import { RankedArticleList } from "./components/RankedArticleList";
 
 function App() {
 
@@ -92,34 +93,7 @@ function App() {
         </div>
       </div>
 
-      <ol className="ranked-articles gap-2-rem">
-        <li>
-          <img src="/src/assets/images/image-retro-pcs.jpg" alt="" />
-          <div>
-            <div>01</div>
-            <h3>Reviving Retro PCs</h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </li>
-
-        <li>
-          <img src="/src/assets/images/image-top-laptops.jpg" alt="" />
-          <div>
-            <div>02</div>
-            <h3> Top 10 Laptops of 2022</h3>
-            <p> Our best picks for various needs and budgets.</p>
-          </div>
-        </li>
-
-        <li>
-          <img src="/src/assets/images/image-gaming-growth.jpg" alt="" />
-          <div>
-            <div>03</div>
-            <h3>The Growth of Gaming</h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </li>
-      </ol>
+      <RankedArticleList />
     </main>
   );
 }
