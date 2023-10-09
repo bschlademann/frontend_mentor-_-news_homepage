@@ -1,4 +1,5 @@
 export type RankedArticle = {
+  index: number;
   imageSrc: string;
   imageAlt: string,
   rank: number;
