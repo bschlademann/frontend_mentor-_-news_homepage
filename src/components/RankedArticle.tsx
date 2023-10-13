@@ -1,7 +1,8 @@
 import { RankedArticleProps } from "../types";
 
 export const RankedArticle = (props: RankedArticleProps) => {
-  const { index, imageSrc, imageAlt, rank, headline, text } = props;
+  const { article, index } = props;
+  const { imageSrc, imageAlt, rank, headline, text } = article;
   const paddedRank = rank.toString().padStart(2, "0");
   return (
     <li key={index}>
