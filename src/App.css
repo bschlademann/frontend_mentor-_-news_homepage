@@ -216,8 +216,8 @@ main {
   letter-spacing: 4px;
   background-color: var(--soft-red);
   padding: 15px 30px 15px 30px;
-  }
-
+  cursor: pointer;
+}
 .new-articles {
   background-color: var(--very-dark-blue);
   padding: 30px 20px;
@@ -276,7 +276,7 @@ h3 {
 .ranked-articles li h3 {
   color: var(--very-dark-blue);
   font-size: 1.1rem;
-align-content: center;
+  align-content: center;
 }
 
 .ranked-articles li > div {
@@ -291,9 +291,8 @@ align-content: center;
 }
 
 .ranked-articles li > div p {
-
   color: var(--dark-grayish-blue);
-  line-height: 1.6rem;  
+  line-height: 1.6rem;
 }
 
 /* BURGER MENU menu */
@@ -307,7 +306,7 @@ align-content: center;
   background-color: var(--very-dark-blue);
   opacity: 0.4;
   transition: all 0.4s ease;
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .toggler {
