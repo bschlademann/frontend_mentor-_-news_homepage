@@ -1,54 +1,24 @@
 import "./App.css";
+import { PageHeader } from "./components/PageHeader";
 import { RankedArticleList } from "./components/RankedArticleList";
 
 function App() {
-
   const toggleOverlay = () => {
-    const toggler = document.querySelector('.toggler');
-    const overlay = document.getElementById('overlay');
-  
+    const toggler = document.querySelector(".toggler");
+    const overlay = document.getElementById("overlay");
+
     if (toggler instanceof HTMLInputElement && overlay) {
-      toggler.addEventListener('change', () => {
-        overlay.style.opacity = toggler.checked ? '0.4' : '0';
+      toggler.addEventListener("change", () => {
+        overlay.style.opacity = toggler.checked ? "0.4" : "0";
       });
     } else {
-      console.error('Toggler or overlay element not found.');
+      console.error("Toggler or overlay element not found.");
     }
-  }
+  };
 
   return (
     <main className="flex-column gap-2-rem">
-      <div className="page-overlay" id="overlay"></div>
-      <div className="page-header gap-2-rem">
-        <img className="logo" src="/src/assets/images/logo.svg" alt="" />
-        <nav>
-          <input type="checkbox" className="toggler" onChange={toggleOverlay}/>
-          <div className="hamburger">
-            <div></div>
-          </div>
-          <div className="menu">
-            <div>
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">New</a>
-                </li>
-                <li>
-                  <a href="#">Popular</a>
-                </li>
-                <li>
-                  <a href="#">Trending</a>
-                </li>
-                <li>
-                  <a href="#">Categories</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <PageHeader toggleOverlay={toggleOverlay} />
 
       <div className="headline-article gap-2-rem">
         <img

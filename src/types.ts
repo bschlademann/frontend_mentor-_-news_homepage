@@ -7,3 +7,7 @@ export type RankedArticle = {
 };
 
 export type RankedArticleProps = { article: RankedArticle; index: number };
+
+export type PageHeaderProps = {
+  toggleOverlay: () => void;
+};
