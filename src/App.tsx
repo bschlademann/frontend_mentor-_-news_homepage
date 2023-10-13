@@ -11,7 +11,7 @@ function App() {
 
     if (toggler instanceof HTMLInputElement && overlay) {
       toggler.addEventListener("change", () => {
-        overlay.style.opacity = toggler.checked ? "0.4" : "0";
+        overlay.style.visibility = toggler.checked ? "visible" : "hidden";
       });
     } else {
       console.error("Toggler or overlay element not found.");
