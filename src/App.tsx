@@ -1,4 +1,5 @@
 import "./App.css";
+import { HeadlineArticle } from "./components/HeadlineArticle";
 import { PageHeader } from "./components/PageHeader";
 import { RankedArticleList } from "./components/RankedArticleList";
 
@@ -20,21 +21,7 @@ function App() {
     <main className="flex-column gap-2-rem">
       <PageHeader toggleOverlay={toggleOverlay} />
 
-      <div className="headline-article gap-2-rem">
-        <img
-          className="hero-image"
-          src="/src/assets/images/image-web-3-mobile.jpg"
-          alt=""
-        />
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div className="gap-2-rem">
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <div className="button">READ MORE</div>
-        </div>
+      <HeadlineArticle />
 
         <div className="new-articles gap-2-rem">
           <h2>New</h2>
@@ -61,7 +48,6 @@ function App() {
             </div>
           </section>
         </div>
-      </div>
 
       <RankedArticleList />
     </main>
