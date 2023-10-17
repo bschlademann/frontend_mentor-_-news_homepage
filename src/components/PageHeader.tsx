@@ -6,7 +6,7 @@ export const PageHeader = (props: PageHeaderProps) => {
   return (
     <>
       <div className="page-overlay" id="overlay"></div>
-      <div className="page-header gap-2-rem">
+      <div className="page-header">
         <img className="logo" src="/src/assets/images/logo.svg" alt="" />
         <nav>
           <input type="checkbox" className="toggler" onChange={toggleOverlay} />

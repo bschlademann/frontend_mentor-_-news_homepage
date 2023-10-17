@@ -153,42 +153,27 @@ body {
   /* Weights: 400, 700, 800 */
   font-family: Inter, sans-serif;
   background-color: var(--off-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-content: center;
 }
 
 body * {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.gap-1-rem {
-  gap: 1rem;
-}
-
-.gap-2-rem {
-  gap: 2rem;
-}
-
-.gap-3-rem {
-  gap: 3rem;
-}
-
-.flex-column {
-  flex-direction: column;
+  display: grid;
+  justify-items: start;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
 }
 
 main {
-  display: flex;
   width: 345px;
   margin: 30px 0px 55px 0px;
+  gap: 2rem;
 }
 
 .page-header {
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  align-items: center;
+  gap: 2rem;
 }
 
 .page-header nav a {
@@ -199,6 +184,14 @@ main {
 .page-header .logo {
   height: 30px;
   width: auto;
+}
+
+.headline-article {
+  gap: 2rem;
+}
+
+.headline-article div {
+  gap: 2rem;
 }
 
 .headline-article .hero-image {
@@ -229,6 +222,7 @@ main {
   padding: 30px 20px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  gap: 2rem;
 
   /* padding values for desktop */
   /* padding: 40px 25px; */
@@ -275,6 +269,10 @@ h3:hover {
 
 .new-articles h3:hover {
   color: var(--soft-orange);
+}
+
+.ranked-articles {
+  gap: 2rem;
 }
 
 .ranked-articles li {
@@ -457,4 +455,10 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 
 .toggler:checked ~ .menu > div > ul > li > a:hover {
   color: var(--soft-red);
+}
+
+@media (min-width: 1110px) {
+  body {
+    /* font-size: 35px; */
+  }
 }

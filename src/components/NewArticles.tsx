@@ -1,6 +1,6 @@
 export const NewArticles = () => {
   return (
-    <div className="new-articles gap-2-rem">
+    <div className="new-articles">
       <h2>New</h2>
       <section>
         <div>

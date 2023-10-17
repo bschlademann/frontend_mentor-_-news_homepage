@@ -7,7 +7,7 @@ import { toggleOverlay } from "./domain";
 
 function App() {
   return (
-    <main className="flex-column gap-2-rem">
+    <main>
       <PageHeader toggleOverlay={toggleOverlay} />
       <HeadlineArticle />
       <NewArticles />
