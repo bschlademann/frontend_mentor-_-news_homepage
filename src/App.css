@@ -213,7 +213,6 @@ main {
   background-color: var(--soft-red);
   padding: 15px 30px 15px 30px;
   cursor: pointer;
-  /* transition: all 0.1s ease; */
 }
 
 .headline-article .button:hover {
@@ -280,12 +279,14 @@ h3:hover {
 
 .ranked-articles li {
   height: 130px;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   gap: 1.5rem;
+  /* FIXME: */
+  grid-template-columns: auto 1fr;
 }
 
 .ranked-articles li img {
-  height: 100%;
+  height: inherit;
 }
 
 .ranked-articles h3 {
@@ -299,8 +300,7 @@ h3:hover {
 }
 
 .ranked-articles li > div {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
 }
 
 .ranked-articles li > div div {
@@ -311,7 +311,7 @@ h3:hover {
 
 .ranked-articles li > div p {
   color: var(--dark-grayish-blue);
-  line-height: 1.6rem;
+  /* line-height: 1.6rem; */
 }
 
 /* BURGER MENU menu */
