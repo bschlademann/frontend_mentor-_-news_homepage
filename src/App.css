@@ -493,5 +493,11 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     margin: 0;
     padding: 40px 25px;
   }
-  
+
+  .ranked-articles {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    margin-top: 40px;
+  }
+
 }
