@@ -175,7 +175,6 @@ main {
   top: 0;
   background-color: var(--off-white);
   margin-top: 30px;
-
 }
 
 .page-header nav {
@@ -214,7 +213,10 @@ main {
   font-weight: 400;
   letter-spacing: 4px;
   background-color: var(--soft-red);
-  padding: 15px 30px 15px 30px;
+  width: 185px;
+  height: 50px;
+  justify-content: center;
+  align-content: center;
   cursor: pointer;
 }
 
@@ -458,15 +460,38 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 
 @media (min-width: 1110px) {
   main {
-    width: 1050px;
-    grid-template-columns: 1fr auto;
+    width: 1110px;
+    grid-template-columns: repeat(3, 1fr);
   }
   .page-header {
     margin: 65px 0 55px 0;
-      height: 60px;
-      align-content: end;
+    height: 60px;
+    align-content: end;
   }
   .page-header .logo {
     height: 40px;
   }
+
+  .headline-article {
+    width: 730px;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 35px; */
+  }
+
+  .headline-article .hero-image {
+    height: 300px;
+    object-fit: cover;
+    grid-column: span 2;
+  }
+
+  h1 {
+    font-size: calc(40px * var(--font-scaling));
+  }
+
+  .new-articles {
+    margin: 0;
+    padding: 40px 25px;
+  }
+  
 }
