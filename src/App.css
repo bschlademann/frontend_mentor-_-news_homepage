@@ -175,7 +175,7 @@ main {
   top: 0;
   background-color: var(--off-white);
   margin-top: 30px;
-  height: 60px;
+
 }
 
 .page-header nav {
@@ -462,9 +462,11 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     grid-template-columns: 1fr auto;
   }
   .page-header {
-    margin-top: 60px;
+    margin: 65px 0 55px 0;
+      height: 60px;
+      align-content: end;
   }
   .page-header .logo {
-    height: 35px;
+    height: 40px;
   }
 }
