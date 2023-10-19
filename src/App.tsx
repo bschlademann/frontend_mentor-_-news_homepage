@@ -7,12 +7,14 @@ import { toggleOverlay } from "./domain";
 
 function App() {
   return (
-    <main>
+    <>
       <PageHeader toggleOverlay={toggleOverlay} />
-      <HeadlineArticle />
-      <NewArticles />
-      <RankedArticleList />
-    </main>
+      <main>
+        <HeadlineArticle />
+        <NewArticles />
+        <RankedArticleList />
+      </main>
+    </>
   );
 }
 
