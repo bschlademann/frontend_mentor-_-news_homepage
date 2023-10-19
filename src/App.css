@@ -476,7 +476,6 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     width: 730px;
     grid-column: span 2;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 35px; */
   }
 
   .headline-article .hero-image {
