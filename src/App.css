@@ -498,5 +498,9 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
     grid-column: span 3;
     margin-top: 40px;
   }
-
 }
+
+/* TODO:
+- make burger menu responsive for desktop
+- @media (min-width: 730px){}
+*/
