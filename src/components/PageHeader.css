@@ -179,6 +179,33 @@
   }
 
   .toggler {
-    /* visibility: hidden; */
+  display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    height: auto;
+    top: auto;
+    right: auto;
+  }
+
+  .menu > div > ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    gap: 1rem;
+    top: auto;
+    padding-left: 0px;
+    visibility: visible;
+    align-items: end;
+  }
+
+  .menu > div > ul > li > a:hover {
+    color: var(--soft-red);
   }
 }
