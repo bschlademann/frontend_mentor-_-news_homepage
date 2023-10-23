@@ -1,3 +1,4 @@
+import "./HeadlineArticle.css"
 export const HeadlineArticle = () => {
   return (
     <div className="headline-article">

@@ -1,3 +1,4 @@
+import "./RankedArticle.css"
 import { RankedArticleProps } from "../types";
 
 export const RankedArticle = (props: RankedArticleProps) => {

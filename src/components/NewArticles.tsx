@@ -1,3 +1,5 @@
+import "./NewArticles.css"
+
 export const NewArticles = () => {
   return (
     <div className="new-articles">

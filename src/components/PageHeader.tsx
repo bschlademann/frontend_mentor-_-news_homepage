@@ -1,8 +1,8 @@
 import { PageHeaderProps } from "../types";
-
+import "./PageHeader.css";
 
 export const PageHeader = (props: PageHeaderProps) => {
-    const {toggleOverlay} = props;
+  const { toggleOverlay } = props;
   return (
     <>
       <div className="page-overlay" id="overlay"></div>

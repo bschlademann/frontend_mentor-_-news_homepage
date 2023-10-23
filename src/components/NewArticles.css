@@ -1,0 +1,35 @@
+.new-articles section div p {
+  color: var(--grayish-blue);
+  line-height: 1.5rem;
+}
+
+.new-articles hr {
+  width: 100%;
+}
+
+.new-articles h3:hover {
+  color: var(--soft-orange);
+}
+
+.new-articles {
+  background-color: var(--very-dark-blue);
+  padding: 30px 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.new-articles section {
+  gap: 1.5rem;
+}
+
+.new-articles section div {
+  gap: 0.5rem;
+}
+
+@media (min-width: 1110px) {
+  .new-articles {
+    margin: 0;
+    padding: 40px 25px;
+  }
+}

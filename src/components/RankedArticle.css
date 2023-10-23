@@ -1,0 +1,41 @@
+.ranked-articles {
+  gap: 2rem;
+}
+
+.ranked-articles li {
+  height: 130px;
+  gap: 1.5rem;
+  grid-template-columns: auto 1fr;
+}
+
+.ranked-articles li img {
+  height: inherit;
+}
+
+.ranked-articles h3 {
+  color: var(--very-dark-blue);
+  font-size: 1.1rem;
+  align-content: center;
+}
+
+.ranked-articles h3:hover {
+  color: var(--soft-red);
+}
+
+.ranked-articles li > div div {
+  color: var(--grayish-blue);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ranked-articles li > div p {
+  color: var(--dark-grayish-blue);
+}
+
+@media (min-width: 1110px) {
+  .ranked-articles {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
+    margin-top: 40px;
+  }
+}
