@@ -167,7 +167,7 @@
   color: var(--soft-red);
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1150px) {
   .page-header {
     margin: 65px 0 55px 0;
     height: 60px;

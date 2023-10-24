@@ -190,7 +190,7 @@ h3:hover {
   cursor: pointer;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1150px) {
   main {
     width: 1110px;
     grid-template-columns: repeat(3, 1fr);

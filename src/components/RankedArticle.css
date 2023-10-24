@@ -32,7 +32,7 @@
   color: var(--dark-grayish-blue);
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1150px) {
   .ranked-articles {
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;

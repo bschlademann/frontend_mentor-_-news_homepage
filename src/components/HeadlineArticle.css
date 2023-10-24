@@ -31,7 +31,7 @@
     background-color: var(--very-dark-blue);
   }
 
-  @media (min-width: 1110px) {
+  @media (min-width: 1150px) {
     .headline-article {
         width: 730px;
         grid-column: span 2;

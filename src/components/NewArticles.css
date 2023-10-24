@@ -30,7 +30,7 @@
   gap: 0.5rem;
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 1150px) {
   .new-articles {
     margin: 0;
     padding: 40px 25px;
