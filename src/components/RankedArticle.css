@@ -32,6 +32,12 @@
   color: var(--dark-grayish-blue);
 }
 
+@media (min-width: 770px) {
+  .ranked-articles {
+    align-content: space-between;
+  }
+}
+
 @media (min-width: 1150px) {
   .ranked-articles {
     grid-template-columns: repeat(3, 1fr);
