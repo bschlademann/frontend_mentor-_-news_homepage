@@ -4,7 +4,8 @@
   position: sticky;
   top: 0;
   background-color: var(--off-white);
-  margin-top: 30px;
+  height: 80px;
+  align-content: center;
 }
 
 .page-header nav {
@@ -179,7 +180,7 @@
   }
 
   .toggler {
-  display: none;
+    display: none;
   }
 
   .hamburger {
