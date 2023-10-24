@@ -5,6 +5,9 @@
 
 .new-articles hr {
   width: 100%;
+  height: 1px;
+  background-color: var(--dark-grayish-blue);
+  border: 0px;
 }
 
 .new-articles h3:hover {
