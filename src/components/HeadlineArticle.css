@@ -1,50 +1,61 @@
 .headline-article {
-    gap: 2rem;
-  }
-  
-  .headline-article div {
-    gap: 2rem;
-  }
-  
-  .headline-article .hero-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .headline-article p {
-    color: var(--dark-grayish-blue);
-  }
-  
-  .headline-article .button {
-    color: var(--off-white);
-    font-weight: 400;
-    letter-spacing: 4px;
-    background-color: var(--soft-red);
-    width: 185px;
-    height: 50px;
-    justify-content: center;
-    align-content: center;
-    cursor: pointer;
-  }
-  
-  .headline-article .button:hover {
-    background-color: var(--very-dark-blue);
+  gap: 2rem;
+}
+
+.headline-article div {
+  gap: 2rem;
+}
+
+.headline-article .hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.headline-article p {
+  color: var(--dark-grayish-blue);
+}
+
+.headline-article .button {
+  color: var(--off-white);
+  font-weight: 400;
+  letter-spacing: 4px;
+  background-color: var(--soft-red);
+  width: 185px;
+  height: 50px;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+
+.headline-article .button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+@media (min-width: 770px) {
+  .headline-article {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2;
   }
 
-  @media (min-width: 1150px) {
-    .headline-article {
-        width: 730px;
-        grid-column: span 2;
-        grid-template-columns: repeat(2, 1fr);
-      }
-    
-      .headline-article .hero-image {
-        height: 300px;
-        object-fit: cover;
-        grid-column: span 2;
-      }
-    
-      h1 {
-        font-size: calc(40px * var(--font-scaling));
-      }
+  .headline-article .hero-image {
+    grid-row: span 2;
   }
+}
+
+@media (min-width: 1150px) {
+  .headline-article {
+    width: 730px;
+    grid-column: span 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .headline-article .hero-image {
+    height: 300px;
+    object-fit: cover;
+    grid-column: span 2;
+  }
+
+  h1 {
+    font-size: calc(40px * var(--font-scaling));
+  }
+}
