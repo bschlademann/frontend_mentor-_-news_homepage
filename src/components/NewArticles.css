@@ -30,6 +30,14 @@
   gap: 0.5rem;
 }
 
+@media (min-width: 770px) {
+  .new-articles {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+  }
+}
+
 @media (min-width: 1150px) {
   .new-articles {
     margin: 0;
