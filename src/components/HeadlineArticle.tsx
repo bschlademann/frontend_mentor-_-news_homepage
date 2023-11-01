@@ -4,7 +4,7 @@ export const HeadlineArticle = () => {
     <div className="headline-article">
       <img
         className="hero-image"
-        src="/images/image-web-3-mobile.jpg"
+        src="./images/image-web-3-mobile.jpg"
         alt=""
       />
       <h1>The Bright Future of Web 3.0?</h1>
