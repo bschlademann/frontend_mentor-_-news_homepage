@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "https://bschlademann.github.io/frontend_mentor_-_news_homepage/",
+  publicDir: "src/assets"
 });
