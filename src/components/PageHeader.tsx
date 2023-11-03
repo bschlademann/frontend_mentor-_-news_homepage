@@ -5,11 +5,11 @@ export const PageHeader = (props: PageHeaderProps) => {
   const { toggleOverlay } = props;
   return (
     <>
-      <div className="page-overlay" id="overlay"></div>
       <div className="page-header">
         <img className="logo" src="./images/logo.svg" alt="" />
         <nav>
           <input type="checkbox" className="toggler" onChange={toggleOverlay} />
+          <div className="page-overlay" id="overlay"></div>
           <div className="hamburger">
             <div></div>
           </div>
